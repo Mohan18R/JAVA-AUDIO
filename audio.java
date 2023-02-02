@@ -7,7 +7,7 @@ import javax.sound.sampled.*;
 public class audio {
     public static void main(String[] args) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
         Scanner sc = new Scanner(System.in);
-        File file = new File("Dandelions.wav");
+        File file = new File("audio.wav");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
